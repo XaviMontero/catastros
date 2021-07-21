@@ -7,5 +7,5 @@ RUN mvn package
 FROM openjdk:11.0-jre
 WORKDIR /app
 EXPOSE 80 5432
-COPY --from=MAVEN_BUILD /build/target/api-facturacion-kpyvara-0.0.1-BETA.jar /app/
-ENTRYPOINT ["java", "-jar", "api-facturacion-kpyvara-0.0.1-BETA.jar"]
+COPY --from=MAVEN_BUILD /build/target/catastro-0.0.1-SNAPSHOT.jar /app/
+ENTRYPOINT ["java", "-jar", "catastro-0.0.1-SNAPSHOT.jar"]
