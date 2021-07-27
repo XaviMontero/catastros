@@ -30,7 +30,7 @@ public class Catastro {
     private String observacion;
 
     @Column
-    private String latitude;
+    private String latitud;
 
     @Column
     private String longuitud;
