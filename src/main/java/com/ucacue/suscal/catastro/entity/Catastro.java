@@ -17,18 +17,35 @@ public class Catastro {
     @Id
     private String clave;
 
-    @Column(name = "nombre", nullable = false, length = 1000)
+    @Column
+    private String cedula;
+
+    @Column
     private String nombre;
 
-    @Column(name = "latitud", nullable = false, length = 50)
-    private String latitud;
+    @Column
+    private String apellido;
 
-    @Column(name = "longitud", nullable = false, length = 50)
-    private String longitud;
+    @Column
+    private String observacion;
 
-    @Column(name = "impuesto", nullable = false)
-    private double impuesto;
+    @Column
+    private String latitude;
 
+    @Column
+    private String longuitud;
+
+    @Column
+    private Float impuesto;
+
+    @Column
+    private Float bomberos;
+
+    @Column
+    private Float avaluo;
+
+    @Column
+    private Integer administrativos;
 
 
 }
