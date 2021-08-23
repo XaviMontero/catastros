@@ -44,6 +44,19 @@ services:
     networks:
       - dockerwp
     restart: always
+  www:
+    image: nginx
+    restart: always
+    expose:
+      - "80"
+    volumes:
+      - ./front:/usr/share/nginx/html:ro
+    environment:
+      VIRTUAL_HOST: 'ccpidsuscal.com' 
+      LETSENCRYPT_HOST: 'ccpidsuscal.com'
+      LETSENCRYPT_EMAIL: 'xavi@kpyvara.com'
+    networks:
+      - dockerwp
 networks:
   dockerwp:
 volumes:
