@@ -37,9 +37,9 @@ services:
       - 80
       - 5432
     environment:
-      VIRTUAL_HOST: 'api.ccpidsuscal.com'
+      VIRTUAL_HOST: 'api.kpyvara.xyz'
       VIRTUAL_PORT: 80  
-      LETSENCRYPT_HOST: 'api.ccpidsuscal.com'
+      LETSENCRYPT_HOST: 'api.kpyvara.xyz'
       LETSENCRYPT_EMAIL: 'xavi@kpyvara.com'
     networks:
       - dockerwp
@@ -52,8 +52,8 @@ services:
     volumes:
       - ./front:/usr/share/nginx/html:ro
     environment:
-      VIRTUAL_HOST: 'ccpidsuscal.com' 
-      LETSENCRYPT_HOST: 'ccpidsuscal.com'
+      VIRTUAL_HOST: 'suscal.kpyvara.xyz' 
+      LETSENCRYPT_HOST: 'suscal.kpyvara.xyz'
       LETSENCRYPT_EMAIL: 'xavi@kpyvara.com'
     networks:
       - dockerwp
